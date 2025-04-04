@@ -33,12 +33,12 @@
 
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="tkgithub" id="tkgithub" class="form-control"
-                                           name="tkgithub" required autofocus>
+                                           name="tkgithub" value="{{ $user->tkgithub }}" required autofocus>
                                 </div>
 
                                 <div class="form-group mb-3">
                                     <input type="text" placeholder="like" id="like" class="form-control"
-                                           name="like" required autofocus>
+                                           name="like"  value="{{ $user->like }}" required autofocus>
                                 </div>
 
 
