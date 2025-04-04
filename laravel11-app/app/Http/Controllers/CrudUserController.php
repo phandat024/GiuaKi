@@ -50,6 +50,8 @@ class CrudUserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
+            'tkgithub' => 'required',
+            'like' => 'required',
         ]);
 
         $data = $request->all();
@@ -58,6 +60,9 @@ class CrudUserController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             /**adddaddd**/
+
+            'tkgithub' => $data['tkgithub'],
+            'like' => $data['like'],
         ]);
 
         return redirect("login");

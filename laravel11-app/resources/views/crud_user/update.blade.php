@@ -28,6 +28,23 @@
                                         <span class="text-danger">{{ $errors->first('email') }}</span>
                                     @endif
                                 </div>
+
+
+
+                                <div class="form-group mb-3">
+                                    <input type="text" placeholder="tkgithub" id="tkgithub" class="form-control"
+                                           name="tkgithub" required autofocus>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <input type="text" placeholder="like" id="like" class="form-control"
+                                           name="like" required autofocus>
+                                </div>
+
+
+
+
+
                                 <div class="form-group mb-3">
                                     <input type="password" placeholder="Password" id="password" class="form-control"
                                            name="password" required>
